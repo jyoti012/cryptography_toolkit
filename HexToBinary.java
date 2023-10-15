@@ -25,8 +25,8 @@ public class HexToBinary {
 	}
 
 	public static void main(String[] args) {
-		String hexValue = "1A3"; // Replace with your hex input
-		String binaryValue = "1111101100101"; // Replace with your binary input
+		String hexValue = "1F65"; // Replace with your hex input
+		String binaryValue = "0001111101100101"; // Replace with your binary input
 
 		String convertedHexToBinary = hexToBinary(hexValue);
 		String convertedBinaryToHex = binaryToHex(binaryValue);
