@@ -6,3 +6,5 @@ target/
 *.logs
 *.iml
 .idea/
+*.ser
+.DS_Store
