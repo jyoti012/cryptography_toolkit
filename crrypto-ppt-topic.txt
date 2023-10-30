@@ -1,0 +1,19 @@
+2023/1410
+(PDF)
+Last updated: 2023-10-06
+Two Algorithms for Fast GPU Implementation of NTT
+
+2023/1589
+(PDF)
+Last updated: 2023-10-13
+Optimized Homomorphic Evaluation of Boolean Functions
+
+2023/1536
+(PDF)
+Last updated: 2023-10-07
+Leaky McEliece: Secret Key Recovery From Highly Erroneous Side-Channel Information
+
+2023/1577
+(PDF)
+Last updated: 2023-10-13
+Asymptotics and Improvements of Sieving for Codes
