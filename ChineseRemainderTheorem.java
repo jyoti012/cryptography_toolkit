@@ -1,3 +1,5 @@
+// https://www.omnicalculator.com/math/chinese-remainder
+// math ref: https://youtu.be/e8DtzQkjOMQ?si=VAVWy4dbBMv3LtE9
 import java.math.BigInteger;
 
 public class ChineseRemainderTheorem {
@@ -22,8 +24,8 @@ public class ChineseRemainderTheorem {
   }
 
   public static void main(String[] args) {
-    int[] a = { 2, 3, 2 }; // Values a1, a2, a3
-    int[] m = { 3, 4, 5 }; // Moduli m1, m2, m3
+    int[] a = { 6858, 8130 }; // Values a1, a2, a3
+    int[] m = { 13697, 8693 }; // Moduli m1, m2, m3
 
     BigInteger result = findCRT(a, m);
     System.out.println("The solution is x ≡ " + result);
