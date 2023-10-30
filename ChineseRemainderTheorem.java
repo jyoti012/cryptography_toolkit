@@ -1,5 +1,15 @@
 // https://www.omnicalculator.com/math/chinese-remainder
 // math ref: https://youtu.be/e8DtzQkjOMQ?si=VAVWy4dbBMv3LtE9
+
+/*
+ * The Chinese Remainder Theorem (CRT) is used to 
+ * solve a set of different congruent equations 
+ * with one variable but different moduli 
+ * which are relatively prime as shown below:
+  X = a, (mod m₁)
+  X = a₂ (mod m₂)
+ * 
+ */
 import java.math.BigInteger;
 
 public class ChineseRemainderTheorem {
