@@ -1,4 +1,11 @@
-// maths ref: https://youtu.be/6KmhCKxFWOs?si=7RITqautKC0zrhzz
+/*
+  The extended Euclidean algorithm is an extension of the Euclidean algorithm, 
+  which is used to find the GCD of two numbers. 
+  It finds h and k such that they satisfy Bézout's identity, 
+  which is the equation : ha + kb = 1 
+  
+  maths ref: https://youtu.be/6KmhCKxFWOs?si=7RITqautKC0zrhzz
+ */ 
 
 import java.util.Scanner;
 
