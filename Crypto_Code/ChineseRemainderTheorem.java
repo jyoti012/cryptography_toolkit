@@ -13,16 +13,16 @@ public class ChineseRemainderTheorem {
 		BigInteger[] mi = { new BigInteger("4459740564724538700519142326997"),
 				new BigInteger("2281806784635143785292256501293"),
 				new BigInteger("2467881921864340392351277277159") };
-		BigInteger crtSqRoot = CRT(ai, mi);
+		BigInteger crtResult = CRT(ai, mi);
 
-		// Calculate the cube root
-		BigInteger cubeRoot = Utils.cubeRoot(crtSqRoot);
+		// Calculate the cube root of the CRT result
+		BigInteger cubeRoot = iRoot(crtResult, 3);
 
 		System.out.println(cubeRoot);
 	}
 
 	public static BigInteger CRT(BigInteger ai[], BigInteger mi[]) {
-		BigInteger M = BigInteger.valueOf(1), Mi[], Ni[], x = BigInteger.valueOf(0);
+		BigInteger M = BigInteger.ONE, Mi[], Ni[], x = BigInteger.ZERO;
 		Mi = new BigInteger[ai.length];
 		Ni = new BigInteger[ai.length];
 
@@ -39,5 +39,23 @@ public class ChineseRemainderTheorem {
 			x = x.add(ai[i].multiply(Ni[i].multiply(Mi[i]))); // same as: x = x + ai[i] * Ni[i] * Mi[i];
 		}
 		return x.mod(M);
+	}
+
+	// Calculate the integer cube root
+	public static BigInteger iRoot(BigInteger x, int n) {
+		BigInteger low = BigInteger.ONE;
+		BigInteger high = x;
+		while (low.compareTo(high) <= 0) {
+			BigInteger mid = low.add(high).divide(BigInteger.valueOf(2));
+			BigInteger midToTheN = mid.pow(n);
+			if (midToTheN.compareTo(x) < 0) {
+				low = mid.add(BigInteger.ONE);
+			} else if (midToTheN.compareTo(x) > 0) {
+				high = mid.subtract(BigInteger.ONE);
+			} else {
+				return mid;
+			}
+		}
+		return low.subtract(BigInteger.ONE);
 	}
 }
