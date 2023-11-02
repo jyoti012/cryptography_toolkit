@@ -1,4 +1,4 @@
-package Crypto_Code;
+package CS616Toolkit;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

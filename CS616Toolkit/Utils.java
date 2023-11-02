@@ -1,4 +1,4 @@
-package Crypto_Code;
+package CS616Toolkit;
 
 import java.math.BigInteger;
 
@@ -12,7 +12,7 @@ public class Utils {
   }
 
   public static BigInteger cubeRoot(BigInteger n) {
-		double root = Math.pow(n.doubleValue(), 1.0 / 3.0);
-		return BigInteger.valueOf((long) root);
-	}
+    double root = Math.pow(n.doubleValue(), 1.0 / 3.0);
+    return BigInteger.valueOf((long) root);
+  }
 }

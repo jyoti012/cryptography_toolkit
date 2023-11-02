@@ -1,4 +1,5 @@
-package Crypto_Code;
+// https://www.eecis.udel.edu/~amer/CISC651/ASCII-Conversion-Chart.pdf
+package CS616Toolkit;
 
 import java.math.BigInteger;
 
@@ -6,13 +7,13 @@ public class ChineseRemainderTheorem {
 
 	public static void main(String[] args) {
 		// enter c1, c2, and c3 here
-		BigInteger[] ai = { new BigInteger("191699250018696932235548276819"),
-				new BigInteger("2262766903820045933008151262425"),
-				new BigInteger("1643829619688527494120778009131") };
+		BigInteger[] ai = { new BigInteger("886534656665328399297603173406"),
+				new BigInteger("2212035097862473138152491479452"),
+				new BigInteger("2081115204144205981960655525917") };
 		// enter n1, n2, and n3 values here
-		BigInteger[] mi = { new BigInteger("4459740564724538700519142326997"),
-				new BigInteger("2281806784635143785292256501293"),
-				new BigInteger("2467881921864340392351277277159") };
+		BigInteger[] mi = { new BigInteger("2267493974874992855694451011493"),
+				new BigInteger("3352097303933636037193800460127"),
+				new BigInteger("3223732200443613340467041133433") };
 		BigInteger crtResult = CRT(ai, mi);
 
 		// Calculate the cube root of the CRT result

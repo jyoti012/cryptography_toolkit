@@ -1,4 +1,4 @@
-package Crypto_Code;
+package CS616Toolkit;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
