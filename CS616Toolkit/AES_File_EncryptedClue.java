@@ -58,7 +58,7 @@ public class AES_File_EncryptedClue {
 					(byte) 0x00, (byte) 0x04, (byte) 0x08
 			};
 			FileInputStream fileInputStream = new FileInputStream(
-					"Crypto_Code/DefaultRSA_key.ser");
+					"CS616Toolkit/DefaultRSA_key.ser");
 			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 			Object secretKeyObj = objectInputStream.readObject();
 
