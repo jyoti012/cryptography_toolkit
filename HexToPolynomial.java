@@ -21,7 +21,7 @@ public class HexToPolynomial {
 	}
 
 	public static void main(String[] args) {
-		String hexString = "1A3"; // Replace with your hexadecimal input
+		String hexString = "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000V"; // Replace with your hexadecimal input
 		String polynomial = hexToPolynomial(hexString);
 
 		System.out.println("Hex to Polynomial: " + polynomial);
